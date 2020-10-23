@@ -84,9 +84,8 @@ Depending on what you intend to visualize, data can be scaled to mean = 0 & stan
 * Setting the `scale` parameter in the heatmap function using  `heatmap.3(scale = "row" )`
 * Directly scaling the matrix content using `t(scale(t(data))) `
 
-&nbsp;
 <p align="left">
-  <img src="img/aesthetics.png" width = "30%"/>
+  <img src="img/aesthetics.png" width = "25%"/>
 </p>
 
 > - Re-arrange columns in the heatmap to best convey your message, either by:
