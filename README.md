@@ -83,7 +83,7 @@ palette <- colorRampPalette(c("yellow3","white","darkblue"))
 Depending on what you intend to visualize, data can be scaled to mean = 0 & standard deviation = 1 either by:
 * Setting the `scale` parameter in the heatmap function using  `heatmap.3(scale = "row" )`
 * Directly scaling the matrix content using `t(scale(t(data))) `
-
+&nbsp;
 <p align="left">
   <img src="img/aesthetics.png" width = "27%"/>
 </p>
