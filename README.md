@@ -2,7 +2,7 @@
 Collection of major bio-themed data visuals &nbsp; `by Amal Katrib`
 <br>
 
-### (1) VIOLIN PLOT
+### (1) Violin Plot
 A box plot and kernel density plot hybrid that shows summary statistics as well as the full distribution of the data
 
 <p align="left">
@@ -40,7 +40,7 @@ lapply(1:length(plot_list), function(i) {
 
 ---
 
-### (2) HEATMAP <br>
+### (2) Heatmap
 A hierarchical clustering visual with a color scale-rendition of numerical data to help reveal underlying patterns
 <p align="left">
   <img src="img/heatmap.png" width = "83%"/>
