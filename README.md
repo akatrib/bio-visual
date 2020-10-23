@@ -1,11 +1,11 @@
-## Bio Visuals
+## Bio-Themed Visuals
 Collection of major bio-themed data visuals &nbsp; `by Amal Katrib`
 <br>
 
-### Violin Plot
+### Violin Plot <br>
 A box plot and kernel density plot hybrid that shows summary statistics as well as the full distribution of the data
 <p align="left">
-  <img src="img/violin-plot.png" width = "38%" height = "50%"/>
+  <img src="img/violin-plot.png" width = "37%" height = "50%"/>
 </p>
 
 
@@ -83,7 +83,7 @@ Depending on what you intend to visualize, data can be scaled to mean = 0 & stan
 - Setting the `scale` parameter in the heatmap function using  `heatmap.3(scale = "row" )`
 - Directly scaling the matrix content using `t(scale(t(data))) `
 
-&nsbp;
+&nbsp;
 <p align="left">
   <img src="img/aesthetics.png" width = "30%"/>
 </p>
