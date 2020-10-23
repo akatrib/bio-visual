@@ -42,7 +42,7 @@ lapply(1:length(plot_list), function(i) {
 ### Heatmap
 A 2D visualization of hierarchical clustering with a color scale-rendition of numerical data to help reveal underlying patterns
 <p align="left">
-  <img src="img/heatmap.png" width = "65%"/>
+  <img src="img/heatmap.png" width = "70%"/>
 </p>
 
 I recommend using the following __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function if you want to include multiple row and column side bars for additional sample and gene info
