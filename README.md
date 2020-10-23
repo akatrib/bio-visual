@@ -5,7 +5,7 @@ Collection of major bio-themed data visuals &nbsp; `by Amal Katrib`
 ## Violin Plot
 A box plot and kernel density plot hybrid that shows summary statistics as well as the full distribution of the data
 <p align="left">
-  <img src="img/violin-plot.png" width = "38%" height = "50%"/>
+  <img src="img/violin-plot.png" width = "39%" height = "50%"/>
 </p>
 
 
@@ -40,7 +40,7 @@ lapply(1:length(plot_list), function(i) {
 ## Heatmap
 A hierarchical clustering visual with a color scale-rendition of numerical data to help reveal underlying patterns
 <p align="left">
-  <img src="img/heatmap.png" width = "70%"/>
+  <img src="img/heatmap.png" width = "78%"/>
 </p>
 
 I recommend using the __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ so you can include multiple row and column side bars with added sample and gene info.
@@ -88,13 +88,13 @@ Depending on what you intend to visualize, data can be scaled to mean = 0 & stan
   <img src="img/aesthetics.png" width = "30%"/>
 </p>
 
-- Re-arrange columns in the heatmap to best convey your message, either by:
-  - Maintaining the original sample order
-  - Using unsupervised hierchical clustering of samples
-- Pay attention to the color scheme:
-  - Use **Diverging Palettes** such as **red-blue** or **yellow-blue** if you want to have 2 contrasting colors that represent variation from a reference value. This is often used in heatmaps when representing differential analysis results
-  - Use **Sequential Palettes** such as **white-lightgrey-darkgrey-black** if you want to represent sequential (increasing / decreasing) data such as age and height
-  - Use **Categorical Palettes** such as **red-black-yellow-orange** if we want to represent categorical data such as gender and disease state
-  - Select a color scheme that color-blind individuals can readily see.**AVOID RED-GREEN**
-  - Avoid excessive inclusion of colors so as to not confuse your audience
-  - Consider the well-perceived __"viridis"__ color scale: `install.packages("viridis")`
+> - Re-arrange columns in the heatmap to best convey your message, either by:
+>   - Maintaining the original sample order
+>   - Using unsupervised hierchical clustering of samples
+> - Pay attention to the color scheme:
+>   - Use **Diverging Palettes** such as **red-blue** or **yellow-blue** if you want to have 2 contrasting colors that represent variation from a reference value. This is often used in heatmaps when representing differential analysis results
+>   - Use **Sequential Palettes** such as **white-lightgrey-darkgrey-black** if you want to represent sequential (increasing / decreasing) data such as age and height
+>   - Use **Categorical Palettes** such as **red-black-yellow-orange** if we want to represent categorical data such as gender and disease state
+>   - Select a color scheme that color-blind individuals can readily see.**AVOID RED-GREEN**
+>   - Avoid excessive inclusion of colors so as to not confuse your audience
+>   - Consider the well-perceived __"viridis"__ color scale: `install.packages("viridis")`
