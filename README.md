@@ -2,10 +2,10 @@
 Collection of major bio-themed data visuals &nbsp; `by Amal Katrib`
 <br>
 
-## Violin Plot
+### Violin Plot
 A box plot and kernel density plot hybrid that shows summary statistics as well as the full distribution of the data
 <p align="left">
-  <img src="img/violin-plot.png" width = "39%" height = "50%"/>
+  <img src="img/violin-plot.png" width = "38%" height = "50%"/>
 </p>
 
 
@@ -36,18 +36,20 @@ lapply(1:length(plot_list), function(i) {
            print(plot_list[[i]])
            dev.off() })
 ```
+&nbsp;
+---
 
-## Heatmap
+### Heatmap
 A hierarchical clustering visual with a color scale-rendition of numerical data to help reveal underlying patterns
 <p align="left">
-  <img src="img/heatmap.png" width = "78%"/>
+  <img src="img/heatmap.png" width = "83%"/>
 </p>
 
 I recommend using the __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ so you can include multiple row and column side bars with added sample and gene info.
 &nbsp;
-Data inputs, and their corresponding formats, include:<br>
-&nbsp;__[ data ]__ log-/variance stabilization-transformed normalized read count matrix (for those in next-gen seq space)<br>
-&nbsp;__[ clab ]__ color mapping of sample of info matrix
+Data inputs, and their corresponding formats, include:
+&nbsp; __[ data ]__ log-/variance stabilization-transformed normalized read count matrix (for those in next-gen seq space)<br>
+&nbsp; __[ clab ]__ color mapping of sample of info matrix
 
 
 |        | sample 1 | sample 2 | sample 3 | sample 4 |
@@ -80,10 +82,9 @@ palette <- colorRampPalette(c("yellow3","white","darkblue"))
 ```
 
 Depending on what you intend to visualize, data can be scaled to mean = 0 & standard deviation = 1 either by:
-- Setting the `scale` parameter in the heatmap function using  `heatmap.3(scale = "row" )`
-- Directly scaling the matrix content using `t(scale(t(data))) `
+&nbsp; Setting the `scale` parameter in the heatmap function using  `heatmap.3(scale = "row" )`
+&nbsp; Directly scaling the matrix content using `t(scale(t(data))) `
 
-&nbsp;
 <p align="left">
   <img src="img/aesthetics.png" width = "30%"/>
 </p>
@@ -92,9 +93,9 @@ Depending on what you intend to visualize, data can be scaled to mean = 0 & stan
 >   - Maintaining the original sample order
 >   - Using unsupervised hierchical clustering of samples
 > - Pay attention to the color scheme:
->   - Use **Diverging Palettes** such as **red-blue** or **yellow-blue** if you want to have 2 contrasting colors that represent variation from a reference value. This is often used in heatmaps when representing differential analysis results
->   - Use **Sequential Palettes** such as **white-lightgrey-darkgrey-black** if you want to represent sequential (increasing / decreasing) data such as age and height
->   - Use **Categorical Palettes** such as **red-black-yellow-orange** if we want to represent categorical data such as gender and disease state
+>   - Use _**Diverging Palettes**_ such as **red-blue** or **yellow-blue** if you want to have 2 contrasting colors that represent variation from a reference value. This is often used in heatmaps when representing differential analysis results
+>   - Use _**Sequential Palettes**_ such as **white-lightgrey-darkgrey-black** if you want to represent sequential (increasing / decreasing) data such as age and height
+>   - Use _**Categorical Palettes**_ such as **red-black-yellow-orange** if we want to represent categorical data such as gender and disease state
 >   - Select a color scheme that color-blind individuals can readily see.**AVOID RED-GREEN**
 >   - Avoid excessive inclusion of colors so as to not confuse your audience
 >   - Consider the well-perceived __"viridis"__ color scale: `install.packages("viridis")`
