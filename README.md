@@ -1,17 +1,19 @@
-## Bio Visuals
+# Bio Visuals
 Collection of major bio-themed data visuals &nbsp; `by Amal Katrib`
 <br>
 
-### Violin Plots
+## Violin Plots
 A box plot and kernel density plot hybrid that shows summary statistics as well as the full distribution of the data.
 <p align="left">
-  <img src="img/violin-plot.png" width = "40%"/>
+  <img src="img/violin-plot.png" width = "45%" height = "50"/>
 </p>
 
-<br>
-Below is a sample code that can be used to generate violin plots in `R`:
+
+Below is a sample code that can be used to generate violin plots in __R__:
 
 ```r
+# load the appropriate packages
+library(ggplot2)
 # generate plots
 plist = list()
 x = 1
