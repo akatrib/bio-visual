@@ -2,8 +2,9 @@
 Collection of major bio-themed data visuals &nbsp; `by Amal Katrib`
 <br>
 
-### Violin Plot <br>
+__(1) &nbsp; Violin Plot__
 A box plot and kernel density plot hybrid that shows summary statistics as well as the full distribution of the data
+
 <p align="left">
   <img src="img/violin-plot.png" width = "37%" height = "50%"/>
 </p>
@@ -36,7 +37,7 @@ lapply(1:length(plot_list), function(i) {
            print(plot_list[[i]])
            dev.off() })
 ```
-&nbsp;
+
 ---
 
 ### Heatmap
@@ -45,8 +46,10 @@ A hierarchical clustering visual with a color scale-rendition of numerical data 
   <img src="img/heatmap.png" width = "83%"/>
 </p>
 
+&nbsp;
+
 I recommend using the __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ so you can include multiple row and column side bars with added sample and gene info. Data inputs, and their corresponding formats, include:
-- __"data" matrix__ &nbsp; log-/variance stabilization-transformed normalized read counts __(when used in next-gen seq)__
+- __"data" matrix__ &nbsp; log-/variance stabilization-transformed normalized read counts __(when used in next-gen seq)__<br>
 - __"clab" matrix__ &nbsp; color mapping of sample of info matrix
 
 
