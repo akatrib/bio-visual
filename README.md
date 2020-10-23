@@ -45,11 +45,9 @@ A hierarchical clustering visual with a color scale-rendition of numerical data 
   <img src="img/heatmap.png" width = "83%"/>
 </p>
 
-I recommend using the __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ so you can include multiple row and column side bars with added sample and gene info.
-&nbsp;
-Data inputs, and their corresponding formats, include:
-&nbsp; __[ data ]__ log-/variance stabilization-transformed normalized read count matrix (for those in next-gen seq space)<br>
-&nbsp; __[ clab ]__ color mapping of sample of info matrix
+I recommend using the __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ so you can include multiple row and column side bars with added sample and gene info. Data inputs, and their corresponding formats, include:
+- __"data" matrix__ &nbsp; log-/variance stabilization-transformed normalized read counts __(when used in next-gen seq)__
+- __"clab" matrix__ &nbsp; color mapping of sample of info matrix
 
 
 |        | sample 1 | sample 2 | sample 3 | sample 4 |
@@ -82,9 +80,10 @@ palette <- colorRampPalette(c("yellow3","white","darkblue"))
 ```
 
 Depending on what you intend to visualize, data can be scaled to mean = 0 & standard deviation = 1 either by:
-&nbsp; Setting the `scale` parameter in the heatmap function using  `heatmap.3(scale = "row" )`
-&nbsp; Directly scaling the matrix content using `t(scale(t(data))) `
+- Setting the `scale` parameter in the heatmap function using  `heatmap.3(scale = "row" )`
+- Directly scaling the matrix content using `t(scale(t(data))) `
 
+&nsbp;
 <p align="left">
   <img src="img/aesthetics.png" width = "30%"/>
 </p>
