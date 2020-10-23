@@ -46,11 +46,9 @@ A hierarchical clustering visual with a color scale-rendition of numerical data 
   <img src="img/heatmap.png" width = "83%"/>
 </p>
 
-&nbsp;
-
 I recommend using the __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ so you can include multiple row and column side bars with added sample and gene info. Data inputs, and their corresponding formats, include:
-- __"data" matrix__ &nbsp; log-/variance stabilization-transformed normalized read counts __(when used in next-gen seq)__<br>
-- __"clab" matrix__ &nbsp; color mapping of sample of info matrix
+* __"data" matrix__ &nbsp; log-/variance stabilization-transformed normalized read counts __(when used in next-gen seq)__
+* __"clab" matrix__ &nbsp; color mapping of sample of info matrix
 
 
 |        | sample 1 | sample 2 | sample 3 | sample 4 |
