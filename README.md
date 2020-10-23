@@ -1,8 +1,8 @@
-# Bio Visuals
+## Bio Visuals
 Collection of major bio-themed data visuals &nbsp; `by Amal Katrib`
 <br>
 
-## Violin Plot
+### Violin Plot
 A box plot and kernel density plot hybrid that shows summary statistics as well as the full distribution of the data
 <p align="left">
   <img src="img/violin-plot.png" width = "40%" height = "50%"/>
@@ -36,18 +36,18 @@ lapply(1:length(plot_list), function(i) {
            print(plot_list[[i]])
            dev.off() })
 ```
+---
 
-## Heatmap
+### Heatmap
 A hierarchical clustering visual with a color scale-rendition of numerical data to help reveal underlying patterns
 <p align="left">
   <img src="img/heatmap.png" width = "70%"/>
 </p>
 
-- I recommend using the following __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ if you want to include multiple row and column side bars for additional sample and gene info
-- Data inputs include:
-  - __[ data ]:__ log- variance stabilization-transformed normalized read count matrix (for those next-gen seq space)
-  - __[ clab ]:__ color mapping of sample of info matrix
-  - They will have the following structure:
+I recommend using the following __[heatmap.3()](https://github.com/obigriffith/biostar-tutorials/blob/master/Heatmaps/heatmap.3.R)__ function in __R__ if you want to include multiple row and column side bars for additional sample and gene info. Data inputs, and their corresponding formats, include:<br>
+__[ data ]__ log-/variance stabilization-transformed normalized read count matrix (for those next-gen seq space)<br>
+__[ clab ]__ color mapping of sample of info matrix
+
 
 |        | sample 1 | sample 2 | sample 3 | sample 4 |
 |:-------|:--------:|:--------:|:--------:|:--------:|
@@ -83,7 +83,7 @@ Depending on what you intend to visualize, data can be scaled to mean = 0 & stan
 - Directly scaling the matrix content using `t(scale(t(data))) `
 
 <p align="left">
-  <img src="img/aesthetics.png" width = "40%"/>
+  <img src="img/aesthetics.png" width = "30%"/>
 </p>
 
 - Re-arrange columns in the heatmap to best convey your message, either by:
